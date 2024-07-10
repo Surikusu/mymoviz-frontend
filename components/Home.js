@@ -36,7 +36,7 @@ function Home() {
 
   // Movies list
   useEffect(() => {
-    fetch('http://localhost:3000/movies')
+    fetch('https://mymoviz-backend-roan.vercel.app/movies')
     .then (response=> response.json())
     .then (data => setTMDBRes(data.results))
   }, [])
