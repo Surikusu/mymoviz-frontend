@@ -38,7 +38,7 @@ function Home() {
   useEffect(() => {
     fetch('https://mymoviz-backend-roan.vercel.app/movies')
     .then (response=> response.json())
-    .then (data => setTMDBRes(data))
+    .then (data => setTMDBRes(data.movies))
   }, [])
   
   const reduceText = (text, maxLength) => {
