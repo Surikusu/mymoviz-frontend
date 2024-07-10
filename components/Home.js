@@ -50,7 +50,7 @@ function Home() {
 
   const movies = TMDBRes.map((data, i) => {
     const isLiked = likedMovies.some(movie => movie === data.title);
-    return <Movie key={i} updateLikedMovies={updateLikedMovies} isLiked={isLiked} title={data.title} overview={reduceText(data.overview,250)} poster_path={data.poster_path} voteAverage={data.voteAverage} voteCount={data.voteCount} />;
+    return <Movie key={i} updateLikedMovies={updateLikedMovies} isLiked={isLiked} title={data.title} overview={reduceText(data.overview,250)} poster_path={data.poster_path} voteAverage={data.vote_Average} voteCount={data.vote_Count} />;
   });
 
   return (
