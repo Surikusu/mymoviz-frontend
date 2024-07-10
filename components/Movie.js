@@ -54,7 +54,7 @@ function Movie(props) {
           <p className={styles.description}>{props.overview}</p>
         </div>
         <div className={styles.iconContainer}>
-          <span className={styles.vote}>{stars} ({props.voteCount})</span>
+          <span className={styles.vote}>{stars} ({props.vote_Count})</span>
           <span>{personalStars} ({personalNote})</span>
           <span><FontAwesomeIcon icon={faVideo} onClick={() => handleWatchMovie()} style={videoIconStyle} className="watch" /> ({watchCount})</span>
           <span><FontAwesomeIcon icon={faHeart} onClick={() => handleLikeMovie()} style={heartIconStyle} className="like" /></span>
